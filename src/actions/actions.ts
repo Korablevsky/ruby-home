@@ -81,6 +81,5 @@ const prisma = new PrismaClient()
 export async function getInitialroductsCards() {
 	const response = await prisma.houses.findMany()
 
-	console.log(response, ' helllooo')
 	return response
 }
