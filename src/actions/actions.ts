@@ -1,6 +1,6 @@
 'use server'
 
-import { Houses, PrismaClient } from '@prisma/client'
+import { PrismaClient } from '@prisma/client'
 
 const initialroductsCards = [
 	{
@@ -79,7 +79,7 @@ const prisma = new PrismaClient()
 // }
 
 export async function getInitialroductsCards() {
-	const response:Houses[] = await prisma.houses.findMany()
+	const response = await prisma.houses.findMany()
 
 	console.log(response, ' helllooo')
 	return response
