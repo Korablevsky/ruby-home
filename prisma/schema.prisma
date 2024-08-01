@@ -13,10 +13,13 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Section {
-  id          String @id @default(auto()) @map("_id") @db.ObjectId
-  typeSection String @unique
-  title       String
-  description String
-  imageUrl    String
+model Houses {
+  id        String @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  location  String
+  price     String
+  rooms     String
+  bathrooms String
+  eat       String
+  imageUrl  String
 }

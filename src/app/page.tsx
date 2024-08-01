@@ -6,7 +6,7 @@ import PropertySection from '@/components/widgets/property-section'
 
 export default function Home() {
 	return (
-		<main className=' '>
+		<main>
 			<FirstSection />
 			<ParthnerSection />
 			<PopularSection />

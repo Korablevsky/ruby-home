@@ -1,4 +1,4 @@
-import Footer from '@/components/widgets/footer'
+import { setInitialroductsCards } from '@/actions/actions'
 import Header from '@/components/widgets/header'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
@@ -20,6 +20,8 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode
 }>) {
+	//  setInitialroductsCards()
+
 	return (
 		<html lang='en'>
 			<body className={`${inter.className} px-3 mx-auto max-w-[1200px]`}>

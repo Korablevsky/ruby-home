@@ -1,8 +1,11 @@
+import { getInitialroductsCards } from '@/actions/actions'
 import Link from 'next/link'
-import H2 from '../ui/h2'
 import Card from '../ui/card'
+import H2 from '../ui/h2'
 
-export default function PopularSection() {
+export default async function PopularSection() {
+	const cards = await getInitialroductsCards()
+
 	return (
 		<section className='mb-[70px] md:mb-[140px]'>
 			<div className=' flex items-center justify-between mb-[35px] md:mb-[70px]'>
@@ -12,14 +15,19 @@ export default function PopularSection() {
 				</Link>
 			</div>
 			<div className=' grid grid-cols-2 md:grid-cols-3 gap-5'>
-				<Card/>
-				<Card/>
-				<Card/>
-				<Card/>
-				<Card/>
-				<Card/>
+				{cards.map(card => (
+					<Card
+						key={card.id}
+						title={card.title}
+						location={card.location}
+						price={card.price}
+						rooms={card.rooms}
+						bathrooms={card.bathrooms}
+						eat={card.eat}
+						imageUrl={card.imageUrl}
+					/>
+				))}
 			</div>
-
 		</section>
 	)
 }
