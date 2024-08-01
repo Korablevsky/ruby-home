@@ -1,4 +1,3 @@
-import { setInitialroductsCards } from '@/actions/actions'
 import Header from '@/components/widgets/header'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'

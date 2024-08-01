@@ -70,13 +70,13 @@ const initialroductsCards = [
 const prisma = new PrismaClient()
 
 // инициализация данных
-export async function setInitialroductsCards() {
-	const r = await prisma.houses.createMany({
-		data: initialroductsCards,
-	})
+// export async function setInitialroductsCards() {
+// 	const r = await prisma.houses.createMany({
+// 		data: initialroductsCards,
+// 	})
 
-	console.log(r, ' helllooo')
-}
+// 	console.log(r, ' helllooo')
+// }
 
 export async function getInitialroductsCards() {
 	const response = await prisma.houses.findMany()
