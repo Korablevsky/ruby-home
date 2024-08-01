@@ -13,7 +13,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model houses {
+model Houses {
   id        String @id @default(auto()) @map("_id") @db.ObjectId
   title     String
   location  String
