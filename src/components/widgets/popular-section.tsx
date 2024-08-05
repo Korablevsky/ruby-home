@@ -14,18 +14,19 @@ export default async function PopularSection() {
 					VIEW ALL
 				</Link>
 			</div>
-			<div className=' grid grid-cols-2 md:grid-cols-3 gap-5'>
+			<div className=' grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-5'>
 				{cards.map(card => (
-					<Card
-						key={card.id}
-						title={card.title}
-						location={card.location}
-						price={card.price}
-						rooms={card.rooms}
-						bathrooms={card.bathrooms}
-						eat={card.eat}
-						imageUrl={card.imageUrl}
-					/>
+					<Link key={card.id} href={`/${card.slug}`}>
+						<Card
+							title={card.title}
+							location={card.location}
+							price={card.price}
+							rooms={card.rooms}
+							bathrooms={card.bathrooms}
+							eat={card.eat}
+							imageUrl={card.imageUrl}
+						/>
+					</Link>
 				))}
 			</div>
 		</section>

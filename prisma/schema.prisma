@@ -15,11 +15,12 @@ datasource db {
 
 model Houses {
   id        String @id @default(auto()) @map("_id") @db.ObjectId
-  title     String
+  title     String 
   location  String
   price     String
   rooms     String
   bathrooms String
   eat       String
   imageUrl  String
+  slug      String
 }

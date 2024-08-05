@@ -40,8 +40,8 @@ export default function PropertySection() {
 				homes through real estate agents and brokers growing there’s plenty of
 			</p>
 
-			<div className=' flex gap-4 md:gap-8'>
-				<div className=' flex flex-col gap-4 md:gap-8'>
+			<div className=' flex gap-2 md:gap-8'>
+				<div className=' flex flex-col gap-2 md:gap-8'>
 					{
 						dataCardProperty1.map((card, index) => (
 							<CardProperty key={index} title={card.title} imageUrl={card.imageUrl} />
@@ -53,7 +53,7 @@ export default function PropertySection() {
 					<Image src='/property-image.png' alt='' width={362} height={548} />
 				</div>
 
-				<div className='flex flex-col gap-4 md:gap-8'>
+				<div className='flex flex-col gap-2 md:gap-8'>
 					{
 						dataCardProperty2.map((card, index) => (
 							<CardProperty key={index} title={card.title} imageUrl={card.imageUrl} />

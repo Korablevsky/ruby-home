@@ -12,11 +12,14 @@ export default function ParthnerSection() {
 				</li>
 				<li>
 					<Image src='/partner2.png' alt='partner' width={125} height={68} />
-				</li><li>
+				</li>
+				<li>
 					<Image src='/partner3.png' alt='partner' width={125} height={68} />
-				</li><li>
+				</li>
+				<li>
 					<Image src='/partner4.png' alt='partner' width={125} height={68} />
-				</li><li>
+				</li>
+				<li>
 					<Image src='/partner5.png' alt='partner' width={125} height={68} />
 				</li>
 			</ul>
