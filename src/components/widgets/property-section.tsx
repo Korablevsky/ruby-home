@@ -42,11 +42,13 @@ export default function PropertySection() {
 
 			<div className=' flex gap-2 md:gap-8'>
 				<div className=' flex flex-col gap-2 md:gap-8'>
-					{
-						dataCardProperty1.map((card, index) => (
-							<CardProperty key={index} title={card.title} imageUrl={card.imageUrl} />
-						))
-					}
+					{dataCardProperty1.map((card, index) => (
+						<CardProperty
+							key={index}
+							title={card.title}
+							imageUrl={card.imageUrl}
+						/>
+					))}
 				</div>
 
 				<div className=' hidden md:block mt-auto'>
@@ -54,11 +56,13 @@ export default function PropertySection() {
 				</div>
 
 				<div className='flex flex-col gap-2 md:gap-8'>
-					{
-						dataCardProperty2.map((card, index) => (
-							<CardProperty key={index} title={card.title} imageUrl={card.imageUrl} />
-						))
-					}
+					{dataCardProperty2.map((card, index) => (
+						<CardProperty
+							key={index}
+							title={card.title}
+							imageUrl={card.imageUrl}
+						/>
+					))}
 				</div>
 			</div>
 		</section>
